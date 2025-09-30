@@ -1,0 +1,23 @@
+monitoring:
+  interval: 60  # seconds
+  metrics:
+    cpu:
+      enabled: true
+      threshold: 80
+    memory:
+      enabled: true
+      threshold: 85
+    disk:
+      enabled: true
+      threshold: 90
+      paths: ["/", "/home"]
+
+logging:
+  level: "INFO"
+  file: "monitor.log"
+  max_size: "10MB"
+  backup_count: 5
+
+api:
+  port: 8080
+  host: "localhost"
