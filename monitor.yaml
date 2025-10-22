@@ -1,0 +1,8 @@
+Default configuration
+service:
+name: "system-monitor"
+port: 9090
+
+database:
+host: "127.0.0.1"
+user: "monitor_user"
